@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const { logger } = require('../utils/logger');
 require('dotenv').config();
 
-const JWT_SECRET = process.env.JWT_SECRET || 'your_jwt_secret_key'; // CHANGE THIS IN PRODUCTION
+const JWT_SECRET = process.env.JWT_SECRET; // CHANGE THIS IN PRODUCTION
 
 const authenticateJWT = (req, res, next) => {
   const authHeader = req.headers.authorization;

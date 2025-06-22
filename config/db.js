@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 require('dotenv').config(); // Ensure dotenv is loaded for config files too
 
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/iam_db';
+const MONGO_URI = process.env.MONGO_URI;
 
 const connectDB = async () => {
   try {
